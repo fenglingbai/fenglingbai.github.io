@@ -1,234 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jinyue Guo - Shanghai Artificial Intelligence Laboratory</title>
+    <title>郭锦越 - 上海人工智能实验室</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Jinyue Guo</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="nav-inner">
+            <a href="#" class="nav-name">郭锦越</a>
+            <div class="nav-right">
+                <a href="#about">关于我</a>
+                <a href="#publications">论文</a>
+                <a href="#news">动态</a>
+                <a href="#contact">联系方式</a>
+            </div>
+            <button class="nav-toggle-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-                <h1>Jinyue Guo</h1>
-                <p class="hero-subtitle">郭金铄</p>
-                <p class="hero-affiliation">Shanghai Artificial Intelligence Laboratory</p>
-                <p class="hero-research">Biomedical Image Analysis · Neuron Segmentation · Connectomics</p>
-                <div class="hero-links">
-                    <a href="mailto:guojinyue@pjlab.org.cn"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://scholar.google.com/citations?user=L5kxMCgAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                    <a href="https://github.com/fenglingbai" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <div class="page-layout">
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div class="avatar-wrapper">
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h1 class="sidebar-name">郭锦越</h1>
+                <p class="sidebar-title">Researcher</p>
+                <p class="sidebar-affiliation">Shanghai Artificial Intelligence Laboratory</p>
+                <p class="sidebar-affiliation-cn">上海人工智能实验室</p>
+                <div class="social-icons">
+                    <a href="mailto:guojinyue@pjlab.org.cn" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?user=L5kxMCgAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/fenglingbai" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="research-card">
+                    <h3>研究兴趣</h3>
+                    <ul>
+                        <li>生物医学图像分析</li>
+                        <li>电子显微镜图像分割</li>
+                        <li>神经元重建与追踪</li>
+                        <li>突触重建</li>
+                        <li>连接组学</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
+        </aside>
 
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p>I am a researcher at <strong>Shanghai Artificial Intelligence Laboratory</strong>, focusing on biomedical image analysis with an emphasis on electron microscopy (EM) image analysis, neuron segmentation, synapse reconstruction, and connectomics.</p>
-                    <p>My research aims to develop advanced computational methods for understanding brain connectivity at the nanoscale, leveraging deep learning and computer vision techniques to process large-scale volumetric EM data.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">23</span>
-                            <span class="stat-label">Publications</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">45</span>
-                            <span class="stat-label">Citations</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">h-index</span>
-                        </div>
+        <main class="content">
+            <section id="about" class="content-section">
+                <h2 class="section-title">关于我</h2>
+                <p>我是<strong>上海人工智能实验室</strong>的研究人员，专注于生物医学图像分析，特别是电子显微镜（EM）图像分析、神经元实例分割、突触重建和连接组学。</p>
+                <p>我的研究致力于开发先进的计算方法，利用深度学习和计算机视觉技术处理大规模三维 EM 数据，在纳米尺度上理解大脑连接结构。已在 <em>IEEE TMI</em>、<em>MICCAI</em>、<em>Neuroscience Bulletin</em> 等顶级期刊和会议发表论文 23 篇。</p>
+            </section>
+
+            <section id="publications" class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">精选论文</h2>
+                    <a href="https://scholar.google.com/citations?user=L5kxMCgAAAAJ" target="_blank" class="view-all">查看全部 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="pub-list">
+                    <div class="pub-card">
+                        <div class="pub-card-title">Anchoring Features via Freezing Weights: A Source-Relaxed Adaptation Approach for Subcellular Ultrastructure EM Segmentation</div>
+                        <div class="pub-card-authors"><strong>J Guo</strong>, Y Zhang, H Zhai, H Yan, J Liu, H Han</div>
+                        <div class="pub-card-venue">Expert Systems with Applications, 2026</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">SynReEM: Synapse Reconstruction via Instance Structure Encoding in Anisotropic Electron Microscopic Volumes</div>
+                        <div class="pub-card-authors"><strong>J Guo</strong>, Y Zhang, H Zhai, Y Jiang, Q Zhang, Y Hua, J Liu, H Han</div>
+                        <div class="pub-card-venue">IEEE Transactions on Medical Imaging, 2026</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">Masked Image Modeling for Generalizable Organelle Segmentation in Volume EM</div>
+                        <div class="pub-card-authors">Y Zhang, H Zhai, <strong>J Guo</strong>, Z Li, J Liu, H Han</div>
+                        <div class="pub-card-venue">IEEE Transactions on Medical Imaging, 2026</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">Ultrastructural Evidence of Altered Dendritic Morphology in the Prefrontal Cortex of Alzheimer's Model Rats</div>
+                        <div class="pub-card-authors"><strong>J Guo</strong>, J Liu, Y Zhang, J Liu, H Zhai, L Li, H Han</div>
+                        <div class="pub-card-venue">Neuroscience Bulletin, 2026</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">Glancing Beyond Patch: Spatial Contextual Cues for 3D Neuron Segmentation</div>
+                        <div class="pub-card-authors">H Yan, Y Zhang, Z Li, <strong>J Guo</strong>, H Zhai, J Liu, ...</div>
+                        <div class="pub-card-venue">IEEE Transactions on Medical Imaging, 2025</div>
+                    </div>
+                    <div class="pub-card pub-card-highlight">
+                        <div class="pub-card-badge">Most Cited</div>
+                        <div class="pub-card-title">SegNeuron: 3D Neuron Instance Segmentation in Any EM Volume with a Generalist Model</div>
+                        <div class="pub-card-authors">Y Zhang, <strong>J Guo</strong>, H Zhai, J Liu, H Han</div>
+                        <div class="pub-card-venue">MICCAI 2024</div>
+                        <div class="pub-card-desc">首个通用型三维神经元实例分割模型，支持任意 EM 数据 volume</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">Re-isotropic Segmentation for Subcellular Ultrastructure in Anisotropic EM Images</div>
+                        <div class="pub-card-authors"><strong>J Guo</strong>, Z Wang, H Zhai, Y Zhang, J Liu, H Han</div>
+                        <div class="pub-card-venue">IEEE Transactions on Medical Imaging, 2024</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">NeuroLink: Bridging Weak Signals in Neuronal Imaging with Morphology Learning</div>
+                        <div class="pub-card-authors">H Yan, H Zhai, <strong>J Guo</strong>, L Li, H Han</div>
+                        <div class="pub-card-venue">MICCAI 2024</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">Planar to Spatial: A Synapse Reconstruction Method to Rebuild Voxel Connections for Anisotropic Serial EM Images</div>
+                        <div class="pub-card-authors"><strong>J Guo</strong>, J Liu, B Hong, Y Zhang, Y Xu, H Han</div>
+                        <div class="pub-card-venue">IEEE ISBI 2023</div>
+                    </div>
+                    <div class="pub-card">
+                        <div class="pub-card-title">CFDA-M: Coarse-to-Fine Domain Adaptation for Mitochondria Segmentation via Patch-wise Image Alignment and Online Self-Training</div>
+                        <div class="pub-card-authors">Y Zhang, J Liu, Z Li, <strong>J Guo</strong>, H Han</div>
+                        <div class="pub-card-venue">IEEE BIBM 2022</div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="publications" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Selected Publications</h2>
-                <p class="section-desc">Full list on <a href="https://scholar.google.com/citations?user=L5kxMCgAAAAJ" target="_blank">Google Scholar</a></p>
-
-                <div class="pub-year-group">
-                    <h3 class="pub-year">2026</h3>
-                    <div class="pub-list">
-                        <div class="pub-item">
-                            <div class="pub-title">Anchoring Features via Freezing Weights: A Source-Relaxed Adaptation Approach for Subcellular Ultrastructure EM Segmentation</div>
-                            <div class="pub-authors"><strong>J Guo</strong>, Y Zhang, H Zhai, H Yan, J Liu, H Han</div>
-                            <div class="pub-venue">Expert Systems with Applications, 2026</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">SynReEM: Synapse Reconstruction via Instance Structure Encoding in Anisotropic Electron Microscopic Volumes</div>
-                            <div class="pub-authors"><strong>J Guo</strong>, Y Zhang, H Zhai, Y Jiang, Q Zhang, Y Hua, J Liu, H Han</div>
-                            <div class="pub-venue">IEEE Transactions on Medical Imaging, 2026</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">Evo-retriever: LLM-guided Curriculum Evolution with Viewpoint-Pathway Collaboration for Multimodal Document Retrieval</div>
-                            <div class="pub-authors">W Li, <strong>J Guo</strong>, Y Wang, H Xiao, Y Zhang, G Liu, HH Wang</div>
-                            <div class="pub-venue">arXiv preprint, 2026</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">Masked Image Modeling for Generalizable Organelle Segmentation in Volume EM</div>
-                            <div class="pub-authors">Y Zhang, H Zhai, <strong>J Guo</strong>, Z Li, J Liu, H Han</div>
-                            <div class="pub-venue">IEEE Transactions on Medical Imaging, 2026</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">A Distribution-aware Semi-supervised Pipeline for Cost-effective Neuron Segmentation</div>
-                            <div class="pub-authors">Y Zhang, H Zhai, <strong>J Guo</strong>, J Liu, Q Xie, H Han</div>
-                            <div class="pub-venue">iScience 29(1), 2026</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">Ultrastructural Evidence of Altered Dendritic Morphology in the Prefrontal Cortex of Alzheimer’s Model Rats</div>
-                            <div class="pub-authors"><strong>J Guo</strong>, J Liu, Y Zhang, J Liu, H Zhai, L Li, H Han</div>
-                            <div class="pub-venue">Neuroscience Bulletin, 2026</div>
-                        </div>
+            <section id="news" class="content-section">
+                <h2 class="section-title">动态</h2>
+                <div class="news-timeline">
+                    <div class="news-item">
+                        <span class="news-date">2026</span>
+                        <span class="news-text">多篇论文被 IEEE TMI、Expert Systems with Applications、Neuroscience Bulletin 等期刊接收</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2025</span>
+                        <span class="news-text">论文被 IEEE TMI 接收，提出基于空间上下文线索的 3D 神经元分割方法</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2024</span>
+                        <span class="news-text">SegNeuron 被 MICCAI 2024 接收，提出通用型 3D 神经元实例分割框架</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2023</span>
+                        <span class="news-text">突触重建工作被 IEEE ISBI 2023 接收</span>
                     </div>
                 </div>
+            </section>
 
-                <div class="pub-year-group">
-                    <h3 class="pub-year">2025</h3>
-                    <div class="pub-list">
-                        <div class="pub-item">
-                            <div class="pub-title">Glancing Beyond Patch: Spatial Contextual Cues for 3D Neuron Segmentation</div>
-                            <div class="pub-authors">H Yan, Y Zhang, Z Li, <strong>J Guo</strong>, H Zhai, J Liu, Y Zhong, J Yuan, L Shen, L Li, ...</div>
-                            <div class="pub-venue">IEEE Transactions on Medical Imaging, 2025</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">Multiplexed Neuromodulatory-type-annotated Whole-brain EM-reconstruction of Larval Zebrafish</div>
-                            <div class="pub-authors">FN Li, JZ Liu, C Shi, JB Yuan, YN Lv, J Liu, LN Zhang, LL Li, LJ Shen, ...</div>
-                            <div class="pub-venue">bioRxiv, 2025</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pub-year-group">
-                    <h3 class="pub-year">2024</h3>
-                    <div class="pub-list">
-                        <div class="pub-item">
-                            <div class="pub-title">SegNeuron: 3D Neuron Instance Segmentation in Any EM Volume with a Generalist Model</div>
-                            <div class="pub-authors">Y Zhang, <strong>J Guo</strong>, H Zhai, J Liu, H Han</div>
-                            <div class="pub-venue">MICCAI 2024</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">Re-isotropic Segmentation for Subcellular Ultrastructure in Anisotropic EM Images</div>
-                            <div class="pub-authors"><strong>J Guo</strong>, Z Wang, H Zhai, Y Zhang, J Liu, H Han</div>
-                            <div class="pub-venue">IEEE Transactions on Medical Imaging 44(4), 2024</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">SAvEM3: Pretrained and Distilled Models for General-purpose 3D Neuron Reconstruction</div>
-                            <div class="pub-authors">H Zhai, <strong>J Guo</strong>, Y Zhang, J Liu, H Han</div>
-                            <div class="pub-venue">IEEE BIBM 2024</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">NeuroLink: Bridging Weak Signals in Neuronal Imaging with Morphology Learning</div>
-                            <div class="pub-authors">H Yan, H Zhai, <strong>J Guo</strong>, L Li, H Han</div>
-                            <div class="pub-venue">MICCAI 2024</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">A Robust Transformer-based Pipeline of 3D Cell Alignment, Denoise and Instance Segmentation on EM Sequence Images</div>
-                            <div class="pub-authors">J Liu, Y Zheng, L Lin, <strong>J Guo</strong>, Y Lv, J Yuan, H Zhai, X Chen, L Shen, L Li, ...</div>
-                            <div class="pub-venue">Journal of Plant Physiology 297, 2024</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pub-year-group">
-                    <h3 class="pub-year">2023</h3>
-                    <div class="pub-list">
-                        <div class="pub-item">
-                            <div class="pub-title">Planar to Spatial: A Synapse Reconstruction Method to Rebuild Voxel Connections for Anisotropic Serial EM Images</div>
-                            <div class="pub-authors"><strong>J Guo</strong>, J Liu, B Hong, Y Zhang, Y Xu, H Han</div>
-                            <div class="pub-venue">IEEE ISBI 2023</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pub-year-group">
-                    <h3 class="pub-year">2022</h3>
-                    <div class="pub-list">
-                        <div class="pub-item">
-                            <div class="pub-title">CFDA-M: Coarse-to-Fine Domain Adaptation for Mitochondria Segmentation via Patch-wise Image Alignment and Online Self-Training</div>
-                            <div class="pub-authors">Y Zhang, J Liu, Z Li, <strong>J Guo</strong>, H Han</div>
-                            <div class="pub-venue">IEEE BIBM 2022</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-grid">
-                    <div class="contact-item">
+            <section id="contact" class="content-section">
+                <h2 class="section-title">联系方式</h2>
+                <div class="contact-list">
+                    <div class="contact-row">
                         <i class="fas fa-building"></i>
-                        <div>
-                            <strong>Affiliation</strong>
-                            <p>Shanghai Artificial Intelligence Laboratory</p>
-                        </div>
+                        <span>上海人工智能实验室</span>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-row">
                         <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>Email</strong>
-                            <p>guojinyue@pjlab.org.cn</p>
-                        </div>
+                        <a href="mailto:guojinyue@pjlab.org.cn">guojinyue@pjlab.org.cn</a>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-row">
                         <i class="fab fa-github"></i>
-                        <div>
-                            <strong>GitHub</strong>
-                            <p><a href="https://github.com/fenglingbai" target="_blank">github.com/fenglingbai</a></p>
-                        </div>
+                        <a href="https://github.com/fenglingbai" target="_blank">github.com/fenglingbai</a>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-row">
                         <i class="fas fa-graduation-cap"></i>
-                        <div>
-                            <strong>Google Scholar</strong>
-                            <p><a href="https://scholar.google.com/citations?user=L5kxMCgAAAAJ" target="_blank">View Profile</a></p>
-                        </div>
+                        <a href="https://scholar.google.com/citations?user=L5kxMCgAAAAJ" target="_blank">Google Scholar Profile</a>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Jinyue Guo. All rights reserved.</p>
+        <div class="footer-inner">
+            <span>最近更新: 2026年8月</span>
         </div>
     </footer>
 
     <script>
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
+        const navRight = document.querySelector('.nav-right');
+        document.querySelector('.nav-toggle-btn').addEventListener('click', function() {
+            navRight.classList.toggle('active');
         });
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navRight.classList.remove('active');
+                }
             });
         });
     </script>
