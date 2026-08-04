@@ -42,12 +42,10 @@ a:hover { color: #92400e; }
 }
 .sidebar-inner { display: flex; flex-direction: column; align-items: center; }
 .avatar-wrapper { margin-bottom: 16px; }
-.avatar-placeholder {
+.avatar-photo {
     width: 160px; height: 160px; border-radius: 16px;
-    background: linear-gradient(135deg, #4a5d3a, #6b7c5a);
-    display: flex; align-items: center; justify-content: center;
-    color: rgba(255,255,255,.6); font-size: 3.5rem;
-    overflow: hidden;
+    object-fit: cover; object-position: center top;
+    display: block;
 }
 .sidebar-name {
     font-family: 'Noto Serif SC', serif; font-size: 1.6rem;
@@ -59,9 +57,6 @@ a:hover { color: #92400e; }
 }
 .sidebar-affiliation {
     font-size: .82rem; color: #6b7280; text-align: center; line-height: 1.5;
-}
-.sidebar-affiliation-cn {
-    font-size: .8rem; color: #9ca3af; text-align: center; margin-bottom: 14px;
 }
 .social-icons {
     display: flex; gap: 14px; margin: 12px 0 20px;
@@ -188,7 +183,7 @@ a:hover { color: #92400e; }
         display: flex; justify-content: center;
     }
     .sidebar-inner { align-items: center; max-width: 300px; }
-    .avatar-placeholder { width: 120px; height: 120px; font-size: 2.5rem; }
+    .avatar-photo { width: 120px; height: 120px; }
     .sidebar-name { font-size: 1.3rem; }
     .research-card { max-width: 300px; }
 }
