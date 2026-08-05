@@ -51,10 +51,6 @@ a:hover { color: #92400e; }
     font-family: 'Noto Serif SC', serif; font-size: 1.6rem;
     font-weight: 700; color: #1f2937; margin-bottom: 4px; text-align: center;
 }
-.sidebar-title {
-    font-size: .92rem; font-weight: 500; color: #b45309;
-    margin-bottom: 2px; text-align: center;
-}
 .sidebar-affiliation {
     font-size: .82rem; color: #6b7280; text-align: center; line-height: 1.5;
 }
@@ -121,12 +117,6 @@ a:hover { color: #92400e; }
     border-color: #d1d5db;
 }
 .pub-card-highlight { border-left: 3px solid #b45309; }
-.pub-card-badge {
-    position: absolute; top: 10px; right: 12px;
-    background: linear-gradient(135deg, #f59e0b, #d97706);
-    color: #fff; font-size: .65rem; font-weight: 600;
-    padding: 2px 8px; border-radius: 10px; letter-spacing: .3px;
-}
 .pub-card-title {
     font-weight: 600; font-size: .9rem; color: #1f2937;
     margin-bottom: 4px; line-height: 1.55;
